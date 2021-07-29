@@ -1,0 +1,138 @@
+  
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("TOG yasratcha.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+}
+
+.logo img{
+    max-width: 200px;
+    height: 50px;
+}
+.navlinks {
+    display: flex;
+    list-style-type: none;
+    padding: 15px 0px;
+}
+.navlinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid transparent;
+    transition: 1s ease;
+}
+.navlinks a:hover {
+    background-color: white;
+    color: black;
+}
+.headermaindiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+}
+.togdiv {
+    margin-bottom: 20px;
+}
+.headermaindiv h1 {
+    font-size: 40px;
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.headermaindiv a {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    transition: 1s ease;
+}
+.headermaindiv a:hover {
+    background-color: white;
+    color: black;
+}
+section h2 {
+    text-align: center;
+    padding: 30px 0px;
+}
+.welcome {
+    display: flex;
+    max-width: 90%;
+    margin: auto;
+    line-height: 25px;
+}
+.welcome p {
+    text-align: justify;
+    padding-left: 20px;
+}
+footer {
+    background-color: rgb(171, 208, 209);
+}
+footer h3 {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+/*================================Media queries for reponsiveness=================================*/
+@media (min-width: 320px) and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin: 0px;
+    }
+    .navbar .links {
+        width: 100%;
+        padding: 0px;
+    }
+    .navbar .navlinks {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar .navlinks li {
+        width: 100%;
+        padding: 0px;
+    }
+    .navbar .links .navlinks li a {
+        display: inline-block;
+        padding: 0px 20px;
+        width: 100%;
+    }
+    .headermaindiv h1 {
+        font-size: 20px;
+    }
+    .welcome .imgdiv img {
+        max-width: 350px;
+    }
+}
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .links .navlinks a {
+        padding: 20px;
+    }
+    .welcome {
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcome .imgdiv img {
+        max-width: 400px;
+    }
+}
